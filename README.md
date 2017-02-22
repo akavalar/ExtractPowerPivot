@@ -1,6 +1,8 @@
 # ExtractPowerPivot
 PowerPivot Extraction Tool
 
+Sample PowerPivot data used in the xlsm file can be found here: https://www.microsoft.com/en-us/download/details.aspx?id=102
+
 Will be fixed in the future (i.e. probably never):
 
 1. no 30 second wait, find a more clever way
