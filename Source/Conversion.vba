@@ -1,3 +1,30 @@
+' Andraz (@akavalar), March 2016
+'
+' This is free and unencumbered software released into the public domain.
+'
+' Anyone is free to copy, modify, publish, use, compile, sell, or
+' distribute this software, either in source code form or as a compiled
+' binary, for any purpose, commercial or non-commercial, and by any
+' means.
+'
+' In jurisdictions that recognize copyright laws, the author or authors
+' of this software dedicate any and all copyright interest in the
+' software to the public domain. We make this dedication for the benefit
+' of the public at large and to the detriment of our heirs and
+' successors. We intend this dedication to be an overt act of
+' relinquishment in perpetuity of all present and future rights to this
+' software under copyright law.
+'
+' THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+' EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+' MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+' IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+' OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+' ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+' OTHER DEALINGS IN THE SOFTWARE.
+'
+' For more information, please refer to <http://unlicense.org/>
+
 'main conversion sub
 Sub ConvertVersions(Target As String, VersionExcel As Integer, wbQueries As Workbook)
 
@@ -20,7 +47,7 @@ On Error GoTo ErrorConversion
     
     'create first randomly named folder (to hold extracted target file)
     Randomize
-    DestinationFolder = TempPath & "\CRA" & Str(Int(((99999999 - 10000000 + 1) * Rnd + 10000000))) 'folder name
+    DestinationFolder = TempPath & "\Jebiga" & Str(Int(((99999999 - 10000000 + 1) * Rnd + 10000000))) 'folder name
     If Len(Dir(DestinationFolder, vbDirectory)) > 0 Then Call fso.DeleteFolder(DestinationFolder, True) 'if folder exists, delete it
     MkDir DestinationFolder 'create folder
     
@@ -35,7 +62,7 @@ On Error GoTo ErrorConversion
     
     'create second randomly named folder (to hold Excel 2010 shell file)
     Randomize
-    DestinationShellFolder = TempPath & "\CRA" & Str(Int(((99999999 - 10000000 + 1) * Rnd + 10000000))) 'folder name
+    DestinationShellFolder = TempPath & "\Jebiga" & Str(Int(((99999999 - 10000000 + 1) * Rnd + 10000000))) 'folder name
     If Len(Dir(DestinationShellFolder, vbDirectory)) > 0 Then Call fso.DeleteFolder(DestinationShellFolder, True) 'if folder exists, delete it
     MkDir DestinationShellFolder 'create folder
     
@@ -69,7 +96,7 @@ On Error GoTo ErrorConversion
 
     'create third randomly named folder (to hold the final file)
     Randomize
-    DestinationFinalFolder = TempPath & "\CRA" & Str(Int(((99999999 - 10000000 + 1) * Rnd + 10000000))) 'folder name
+    DestinationFinalFolder = TempPath & "\Jebiga" & Str(Int(((99999999 - 10000000 + 1) * Rnd + 10000000))) 'folder name
     If Len(Dir(DestinationFinalFolder, vbDirectory)) > 0 Then Call fso.DeleteFolder(DestinationFinalFolder, True) 'if folder exists, delete it
     MkDir DestinationFinalFolder 'create folder
 
@@ -1042,7 +1069,7 @@ Sub DeleteConvertedFiles()
 
 Set fso = CreateObject("Scripting.FileSystemObject")
 On Error GoTo ErrorFileOpen
-    Call fso.DeleteFolder("C:\Users\AKavalar\AppData\Local\Temp\CRA *", True) 'if "CRA *" folders exist, delete them
+    Call fso.DeleteFolder("C:\Users\AKavalar\AppData\Local\Temp\Jebiga *", True) 'if "Jebiga *" folders exist, delete them
     MsgBox "All files successfully deleted."
     End
 
