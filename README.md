@@ -12,11 +12,11 @@
 
 Disclaimer: Never really tested with Excel 2016.
 
-Sample PowerPivot data used in the xlsm file can be found here: https://www.microsoft.com/en-us/download/details.aspx?id=102
+Sample PowerPivot data used in the xlsm file can be found [here](https://www.microsoft.com/en-us/download/details.aspx?id=102).
 
 ## TO-DO
-Minor fixes required:
+Minor fixes that still need to be implemented:
 
-1. no 30 second wait (find a more clever way)
-2. open pre2008 model in 2013
-3. "Open Excel2013zip For Binary Lock Read Write As #1"
+1. No 30-second wait (i.e. find a more clever way).
+2. Open pre-2008 model in Excel 2013.
+3. "Open Excel2013zip For Binary Lock Read Write As #1".
