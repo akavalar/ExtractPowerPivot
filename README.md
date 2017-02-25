@@ -2,7 +2,7 @@
 
 ## Tool for easy PowerPivot data extraction (models embedded inside Excel files)
 
-1. Can open PowerPivot 2013 models in Excel 2010 (creates a new file by injecting the 2013 ABF backup file into an empty 2010 Excel file). Also does the reverse. Empty files are stored as BASE64 encoded strings.
+1. Can open PowerPivot 2013 models in Excel 2010 (creates a new file by injecting the 2013 ABF backup file into an empty 2010 Excel file). Also does the reverse. Empty files are stored as Base64 encoded strings.
 2. Can query 2008 RTM, 2010 and 2013 PowerPivot models.
 3. Can get table and column metadata, unique values in each column.
 4. Can retrieve entire tables.
